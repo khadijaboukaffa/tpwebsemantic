@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/khadija/ontologies/2020/0/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/khadija/ontologies/2020/0/untitled-ontology-9">
+    <Prefix name="" IRI="http://www.semanticweb.org/khadija/ontologies/2020/0/untitled-ontology-9"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Assise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dossier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pieds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Siège"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siège_mobiles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siège_officiel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siège_pour_le_transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siège_pour_plusieurs_personnes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siège_pour_position_allongée"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siège_pour_une_personne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#siège_repliable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_part"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Assise"/>
+        <Class IRI="#Part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bras"/>
+        <Class IRI="#Part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dossier"/>
+        <Class IRI="#Part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pieds"/>
+        <Class IRI="#Part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siège"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Has_part"/>
+            <Class IRI="#Part"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siège_mobiles"/>
+        <Class IRI="#Siège"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siège_officiel"/>
+        <Class IRI="#Siège"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siège_pour_le_transport"/>
+        <Class IRI="#Siège"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siège_pour_plusieurs_personnes"/>
+        <Class IRI="#Siège"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siège_pour_position_allongée"/>
+        <Class IRI="#Siège"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siège_pour_une_personne"/>
+        <Class IRI="#Siège"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#siège_repliable"/>
+        <Class IRI="#Siège"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Assise"/>
+        <Class IRI="#Bras"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assise"/>
+        <Class IRI="#Dossier"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assise"/>
+        <Class IRI="#Pieds"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assise"/>
+        <Class IRI="#Siège"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bras"/>
+        <Class IRI="#Dossier"/>
+        <Class IRI="#Pieds"/>
+        <Class IRI="#Siège"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_mobiles"/>
+        <Class IRI="#siège_pour_plusieurs_personnes"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_mobiles"/>
+        <Class IRI="#siège_pour_position_allongée"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_mobiles"/>
+        <Class IRI="#siège_pour_une_personne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_mobiles"/>
+        <Class IRI="#siège_repliable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_officiel"/>
+        <Class IRI="#siège_pour_plusieurs_personnes"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_officiel"/>
+        <Class IRI="#siège_pour_une_personne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_pour_le_transport"/>
+        <Class IRI="#siège_pour_une_personne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_pour_plusieurs_personnes"/>
+        <Class IRI="#siège_repliable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_pour_position_allongée"/>
+        <Class IRI="#siège_repliable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#siège_pour_une_personne"/>
+        <Class IRI="#siège_repliable"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_part"/>
+        <Class IRI="#Siège"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_part"/>
+        <Class IRI="#Part"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_mobiles</IRI>
+        <Literal xml:lang="fr">berceuse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_mobiles</IRI>
+        <Literal xml:lang="fr">fauteuil à bascule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_mobiles</IRI>
+        <Literal xml:lang="en">lullaby</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_mobiles</IRI>
+        <Literal xml:lang="en">rocking-chair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_officiel</IRI>
+        <Literal xml:lang="fr">la cathèdre de l&apos;évéque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_officiel</IRI>
+        <Literal xml:lang="fr">la chaise curule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_officiel</IRI>
+        <Literal xml:lang="fr">la salle des religieux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_officiel</IRI>
+        <Literal xml:lang="en">the cathedral of the bishop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_officiel</IRI>
+        <Literal xml:lang="en">the curule chair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_officiel</IRI>
+        <Literal xml:lang="en">the religious room</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_le_transport</IRI>
+        <Literal xml:lang="fr">la chaise à porteurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_le_transport</IRI>
+        <Literal xml:lang="fr">le filanzane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_le_transport</IRI>
+        <Literal xml:lang="fr">le palanquin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_le_transport</IRI>
+        <Literal xml:lang="en">sedan chair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_le_transport</IRI>
+        <Literal xml:lang="en">the filanzane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_le_transport</IRI>
+        <Literal xml:lang="en">the palanquin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="fr">la banquette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="fr">le banc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="fr">le canapé</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="fr">le divan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="fr">le sofa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="en">the bench</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="en">the couch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="en">the seat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_plusieurs_personnes</IRI>
+        <Literal xml:lang="en">the sofa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_position_allongée</IRI>
+        <Literal xml:lang="fr">la chaise longue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_position_allongée</IRI>
+        <Literal xml:lang="fr">le lit grec</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_position_allongée</IRI>
+        <Literal xml:lang="fr">le lit romain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_position_allongée</IRI>
+        <Literal xml:lang="en">the greek bed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_position_allongée</IRI>
+        <Literal xml:lang="en">the lounge chair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_position_allongée</IRI>
+        <Literal xml:lang="en">the roman bed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="en">armchair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="en">chair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="fr">chaise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="fr">fauteuil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="fr">l&apos;escabeau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="fr">pouf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="en">pouffe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_pour_une_personne</IRI>
+        <Literal xml:lang="en">the stool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_repliable</IRI>
+        <Literal xml:lang="en">folding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_repliable</IRI>
+        <Literal xml:lang="en">folding seat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_repliable</IRI>
+        <Literal xml:lang="fr">pliant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#siège_repliable</IRI>
+        <Literal xml:lang="fr">strapontin</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
